@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96"/>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="logo">
+        <img src="resources/Logo.svg" alt="Logo" />
+      </nav>
+    </header>
+    <main class="container">
+      <div class="intro">
+        <h1>Interested in our<br />business pricing?</h1>
+        <p>
+          Fill out the form to view details and we'll <br />
+          contact you as soon as possible
+        </p>
+      </div>
+      <div class="card">
+        <form class="formulario">
+          <div class="fila">
+            <div class="campo">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Ethan Johnson"/>
+            </div>
+            <div class="campo">
+              <label for="company-email">Company Email</label>
+              <input type="email" id="company-email" name="company-email" placeholder="ethan@johnson.com" />
+            </div>
+          </div>
+          <div class="fila">
+            <div class="campo">
+              <label for="company-size">Company Size</label>
+              <select name="company-size" id="company-size">
+                <option value="50-100" selected>50-100 employees</option>
+                <option value="0-20">0-20 employees</option>
+                <option value="20-50">20-50 employees</option>
+                <option value="100-500">100-500 employees</option>
+                <option value="500+">500+ employees</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="subject">Subject</label>
+              <select name="subject" id="subject">
+                <option value="Building Landing pages" selected>Building Landing pages</option>
+                <option value="Building Mobile Apps">Building Mobile App</option>
+                <option value="Building E-commerce Sites">Building E-commerce Sites</option>
+                <option value="Building Web Applications">Building Web Applications</option>
+              </select>
+            </div>
+          </div>
+          <div class="fila-full">
+            <div class="campo">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4">50-100 employees</textarea>
+            </div>
+          </div>
+          <div class="fila">
+            <button type="submit" class="btn-contact-sales">Contact Sales</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <div class="author-info">Coded by <a href="#">Kim Du Ri Carrillo Chávez</a></div>
+  </body>
+</html>

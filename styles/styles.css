@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url("../resources/background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  position: absolute; 
+  top: 20px;
+  left: 20px;
+  width: 96px; 
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px; 
+  color: #fff;
+}
+
+.intro h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.intro p {
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  opacity: 0.9;
+}
+
+.card {
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 20px; 
+  margin: 0 auto;
+  width: 600px; 
+  height: 400px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /
+}
+
+.fila {
+  display: flex;
+  gap: 20px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+}
+
+.fila-full{
+  width: 100%;
+}
+
+.campo label{
+  color: #fff;
+  font-size: 10px;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.campo input{
+  color: #000;
+}
+
+.campo input, .campo select, .campo textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+   border: none;
+  background-color: #fff;;
+  font-size: 12px;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  outline: none;
+}
+
+.campo input::placeholder {
+  color:#000;
+}
+
+.campo textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+}
+
+.btn-contact-sales {
+  width: 100%;
+  padding: 18px;
+  border-radius: 12px;
+  border: none;
+  background-color: #fff; 
+  color: #6F67BE; 
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contact-sales:hover {
+  background-color: #f0f0f0;
+}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.author-info a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding-top: 50px; 
+    justify-content: flex-start; 
+  }
+
+  .logo img {
+    width: 60px; 
+    margin-bottom: 20px;
+  }
+
+  .intro h1 {
+    font-size: 35px;
+    margin-top: 80px;
+  }
+
+  .intro p {
+    font-size: 15px;
+    margin-bottom: 60px;
+  }
+
+
+  .card {
+    padding: 20px; 
+    max-width: 480px;
+    margin: 0 auto;
+    width: 360px; 
+    height: 620px;
+  }
+
+  
+  .fila {
+    flex-direction: column; 
+    gap: 0;
+  }
+
+  .campo {
+    margin-bottom: 20px; 
+  }
+  body{
+    height: 100vh;
+    background-image: url("../resources/background@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
